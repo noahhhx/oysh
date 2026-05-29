@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.oysh</groupId>
+  <artifactId>oysh</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>oysh</name>
+  <description>oysh</description>
+  <url>https://github.com/noahhhx/oysh</url>
+
+  <licenses>
+    <license>
+      <name>GNU Affero General Public License v3.0</name>
+      <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+      <distribution>repo</distribution>
+      <comments>
+        Free for open source projects. For commercial/closed-source licensing,
+        contact my@email.com.
+      </comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Noah Giles</name>
+      <email>my@email.com</email>
+      <organization>oysh</organization>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/noahhhx/oysh.git</connection>
+    <developerConnection>scm:git:ssh://github.com/noahhhx/oysh.git</developerConnection>
+    <url>https://github.com/noahhhx/oysh</url>
+  </scm>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.11.4</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
