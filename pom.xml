@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
 
   <name>oysh</name>
-  <description>oysh</description>
+  <description>SSH-served interactive shell for Java apps.</description>
   <url>https://github.com/noahhhx/oysh</url>
 
   <licenses>
@@ -31,6 +31,12 @@
       <organization>oysh</organization>
     </developer>
   </developers>
+  
+  <modules>
+    <module>oysh-core</module>
+    <module>oysh-spring-boot-starter</module>
+    <module>oysh-example</module>
+  </modules>
 
   <scm>
     <connection>scm:git:git://github.com/noahhhx/oysh.git</connection>
@@ -42,24 +48,35 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    
+    <!-- Dependency Versions -->
+    <sshd.version>2.14.0</sshd.version>
+    <jline.version>3.27.1</jline.version>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <version>5.11.4</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.2</version>
-      </plugin>
-    </plugins>
-  </build>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>3.5.14</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.sshd</groupId>
+        <artifactId>sshd-core</artifactId>
+        <version>${sshd.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.jline</groupId>
+        <artifactId>jline</artifactId>
+        <version>${jline.version}</version>
+      </dependency>
+      
+    </dependencies>
+  </dependencyManagement>
 </project>
