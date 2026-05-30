@@ -12,3 +12,7 @@ target/
 
 ### VS Code ###
 .vscode/
+
+### Testing ###
+hostkey-standalone.ser
+oysh-example/oysh-standalone-example/dependency-reduced-pom.xml
