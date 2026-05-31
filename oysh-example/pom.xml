@@ -12,5 +12,8 @@
   <groupId>com.noah.oysh</groupId>
   <artifactId>oysh-example</artifactId>
   <packaging>pom</packaging>
-
+  
+  <modules>
+    <module>oysh-standalone-example</module>
+  </modules>
 </project>
