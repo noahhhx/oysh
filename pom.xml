@@ -19,7 +19,7 @@
       <distribution>repo</distribution>
       <comments>
         Free for open source projects. For commercial/closed-source licensing,
-        contact my@email.com.
+        contact noah@noahhh.co.uk.
       </comments>
     </license>
   </licenses>
@@ -27,7 +27,7 @@
   <developers>
     <developer>
       <name>Noah Giles</name>
-      <email>my@email.com</email>
+      <email>noah@noahhh.co.uk</email>
       <organization>oysh</organization>
     </developer>
   </developers>

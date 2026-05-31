@@ -1,0 +1,11 @@
+site_name: oysh
+site_url: https://noahhhx.github.io/oysh/
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.footer
+
+nav:
+  - Home: index.md
