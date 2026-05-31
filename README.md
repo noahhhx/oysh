@@ -29,7 +29,9 @@ for exposing a tiny shell over ssh.
 
 ## TODOs
 
-- [] Core test cases
+- [] Start documentation
+- [] Add core module docs
+- [] Add core example docs
 - [] Springboot starter module
 - [] Springboot example project
 - [] Springboot test cases

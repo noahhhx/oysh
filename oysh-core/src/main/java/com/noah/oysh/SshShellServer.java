@@ -66,6 +66,7 @@ public class SshShellServer {
         
         try {
             s.start();
+            server = s;
         } catch (IOException e) {
             throw new UncheckedIOException("Failed to start SSH shell server", e);
         }
