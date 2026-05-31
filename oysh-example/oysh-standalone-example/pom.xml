@@ -6,7 +6,7 @@
   
   <parent>
     <groupId>com.oysh</groupId>
-    <artifactId>oysh</artifactId>
+    <artifactId>oysh-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
