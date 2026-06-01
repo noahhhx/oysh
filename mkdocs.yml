@@ -24,3 +24,8 @@ extra:
 
 nav:
   - Home: index.md
+  - Core:
+      - Introduction: core/introduction.md
+      - Usage: core/usage.md
+      - Auth: core/auth.md
+      - Command Frameworks: core/command-framework.md

@@ -4,14 +4,26 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.noah.oysh</groupId>
+    <groupId>io.github.noahhhx</groupId>
     <artifactId>oysh</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>oysh-example</artifactId>
   <packaging>pom</packaging>
-  
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <configuration>
+          <skipPublishing>true</skipPublishing>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <modules>
     <module>oysh-standalone-example</module>
   </modules>
