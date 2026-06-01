@@ -30,33 +30,34 @@ for exposing a tiny shell over ssh.
 
 ## Documentation
 
-Documentation is managed by [mkdocs](https://www.mkdocs.org/). Written purely in Markdown, and
-located in the [`docs`](./docs) directory.
+Documentation is managed by [mkdocs](https://www.mkdocs.org/) with the
+[Material](https://squidfunk.github.io/mkdocs-material/) theme. Versioned deployments are handled
+by [mike](https://github.com/jimporter/mike). Sources live in [`docs/`](./docs).
 
 To view online, see [the documentation here](https://noahhhx.github.io/oysh/).
 
-To build the documentation locally. \
-Install mkdocs:
+To build the documentation locally:
+Install dependencies:
 ```shell
 # Using pip
-pip install mkdocs-material
+pip install mkdocs-material mike
 # On Arch (using Yay)
-yay -S mkdocs
+yay -S mkdocs python-mike
 ```
-Run locally:
+Serve locally:
 ```shell
 # Using Makefile
 make docs
-# Using mkdocs
-mkdocs serve -a localhost:8082mkdocs serve -a localhost:8082
+# Using mike
+mkdocs serve -a localhost:8082
 ```
-Then go to `http://localhost:8082/oysh` in your browser.
+Then open `http://localhost:8082/oysh` in your browser.
 
 ---
 
 ## TODOs
 
-- [x] Add core module docs (sort of !TODO! versioned docs)
+- [] Add core module docs
 - [] Add core example docs
 - [] Springboot starter module
 - [] Springboot example project

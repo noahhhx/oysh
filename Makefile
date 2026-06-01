@@ -12,5 +12,8 @@ run-standalone-example: ## Run standalone example program
 docs: ## Serve documentation locally (usage: make docs PORT=8082)
 	mkdocs serve -a localhost:$(or $(PORT), 8082)
 
+docs-versioned: ## Serve versioned docs locally (requires mike)
+	mike serve -a localhost:$(or $(PORT), 8082)
+
 help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf " %-20s %s\n", $$1, $$2}'
