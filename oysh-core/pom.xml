@@ -7,9 +7,14 @@
   <parent>
     <groupId>io.github.noahhhx</groupId>
     <artifactId>oysh</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
 
+  <name>oysh-core module</name>
+  <description>
+    Framework-agnostic building blocks for serving an interactive 
+    shell over SSH from a Java application.
+  </description>
   <artifactId>oysh-core</artifactId>
   
   <dependencies>

@@ -34,7 +34,6 @@
   
   <modules>
     <module>oysh-core</module>
-    <module>oysh-spring-boot-starter</module>
     <module>oysh-example</module>
   </modules>
 
