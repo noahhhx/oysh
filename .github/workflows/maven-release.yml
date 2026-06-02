@@ -56,6 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          shopt -s globstar
           git add **/pom.xml
           git commit -m "Release ${{ steps.version.outputs.release }}"
           if [ "${{ github.event_name }}" = "release" ]; then
@@ -87,6 +88,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          shopt -s globstar
           git add **/pom.xml
           git commit -m "Prepare next development version ${{ steps.next.outputs.version }}"
           git push origin main
