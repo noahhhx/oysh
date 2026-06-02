@@ -14,5 +14,3 @@ and connecting with a standard SSH client.
 - [Usage](./core/usage.md)
 - [Auth](./core/auth.md)
 - [Command Frameworks](./core/command-framework.md)
-
-**Spring-boot**
