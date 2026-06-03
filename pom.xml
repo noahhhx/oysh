@@ -35,6 +35,8 @@
   <modules>
     <module>oysh-core</module>
     <module>oysh-example</module>
+    <module>oysh-spring-boot-starter</module>
+    <module>oysh-example/oysh-spring-boot-example</module>
   </modules>
 
   <scm>
@@ -51,6 +53,7 @@
     <!-- Dependency Versions -->
     <sshd.version>2.14.0</sshd.version>
     <jline.version>3.27.1</jline.version>
+    <picocli.version>4.7.2</picocli.version>
   </properties>
 
   <dependencyManagement>
@@ -74,6 +77,17 @@
         <groupId>org.jline</groupId>
         <artifactId>jline</artifactId>
         <version>${jline.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.picocli</groupId>
+        <artifactId>picocli</artifactId>
+        <version>${picocli.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.picocli</groupId>
+        <artifactId>picocli-shell-jline3</artifactId>
+        <version>${picocli.version}</version>
       </dependency>
       
     </dependencies>

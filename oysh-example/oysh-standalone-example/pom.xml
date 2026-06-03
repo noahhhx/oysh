@@ -31,7 +31,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.noah.oysh.StandaloneExample</mainClass>
+              <mainClass>io.github.noahhhx.oysh.StandaloneExample</mainClass>
             </manifest>
           </archive>
         </configuration>
