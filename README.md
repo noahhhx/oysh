@@ -57,9 +57,8 @@ Then open `http://localhost:8082/oysh` in your browser.
 
 ## TODOs
 
-- [] Springboot starter module
-- [] Springboot example project
 - [] Springboot test cases
+- [] Springboot docs
 - [] Non interactive exec channel support
 - [] Public key auth
 - [] Integrate spring security
