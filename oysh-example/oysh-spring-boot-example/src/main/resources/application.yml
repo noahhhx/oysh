@@ -1,0 +1,13 @@
+spring:
+  main:
+    banner-mode: console
+    
+oysh:
+  enabled: true
+  host: 127.0.0.1
+  port: 2222
+  host-key-path: hostkey.ser
+  idle-timeout: 10m
+  prompt: "demo-oysh> "
+  auth:
+    authorized-keys-path: ./authroized-keys
