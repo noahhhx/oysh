@@ -1,6 +1,7 @@
 package io.github.noahhhx.oysh.boot;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.noahhhx.oysh.ShellRunner;
@@ -8,6 +9,7 @@ import io.github.noahhhx.oysh.SshSession;
 import io.github.noahhhx.oysh.SshShellServer;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Set;
 import org.jline.terminal.Terminal;
@@ -80,6 +82,33 @@ class PicocliShellRunnerTest {
 
             String output = captured.toString(StandardCharsets.UTF_8);
             assertTrue(output.contains("Connected as 'blankuser'"));
+        }
+
+        @Test
+        void builtinClearScreenExecutesWithoutError() throws Exception {
+            // Redirect System.err to capture picocli's handleUnhandled() output,
+            // which currently prints the InitializationException stack trace there.
+            PrintStream originalErr = System.err;
+            ByteArrayOutputStream errCapture = new ByteArrayOutputStream();
+            System.setErr(new PrintStream(errCapture));
+
+            try {
+                ByteArrayOutputStream captured = new ByteArrayOutputStream();
+                Terminal terminal = new ExternalTerminal("test", "xterm-256color",
+                      new ByteArrayInputStream("cls\n".getBytes(StandardCharsets.UTF_8)),
+                      captured,
+                      StandardCharsets.UTF_8);
+                SshSession session = new SshSession("clsuser", Set.of(), terminal);
+
+                shellRunner.run(session);
+
+                String errOutput = errCapture.toString(StandardCharsets.UTF_8);
+                assertFalse(errOutput.contains("Cannot instantiate"),
+                      "ClearScreen built-in command should not fail with "
+                            + "InitializationException. System.err contained: " + errOutput);
+            } finally {
+                System.setErr(originalErr);
+            }
         }
     }
 

@@ -42,7 +42,11 @@ public class PicocliShellRunner implements ShellRunner {
     public void run(SshSession session) throws Exception {
         Terminal terminal = session.getTerminal();
 
-        CommandLine root = buildCommandTree(session);
+        PicocliCommands.PicocliCommandsFactory chainedFactory =
+              new PicocliCommands.PicocliCommandsFactory(factory);
+        chainedFactory.setTerminal(terminal);
+
+        CommandLine root = buildCommandTree(session, chainedFactory);
 
         Parser parser = new DefaultParser();
         Supplier<Path> workDir = () -> Paths.get(System.getProperty("user.dir"));
@@ -56,9 +60,9 @@ public class PicocliShellRunner implements ShellRunner {
               .completer(systemRegistry.completer())
               .parser(parser)
               .build();
-        
+
         session.writeLine("Connected as '" + session.getPrincipal() + "'. Type 'help' for commands.");
-        
+
         while (true) {
             try {
                 systemRegistry.cleanUp();
@@ -82,7 +86,7 @@ public class PicocliShellRunner implements ShellRunner {
         }
     }
 
-    private CommandLine buildCommandTree(SshSession session) {
+    private CommandLine buildCommandTree(SshSession session, CommandLine.IFactory factory) {
         CommandLine root = new CommandLine(new RootCommand(), factory);
         for (SshCommandRegistry.Entry entry : registry.getEntries()) {
             if (session.hasAnyRole(entry.roles())) {
