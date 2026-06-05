@@ -8,29 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://noahhhx.github.io/oysh/dev/">
+        <link rel="canonical" href="https://noahhhx.github.io/oysh/dev/spring/auth/">
       
       
-      
-        <link rel="next" href="core/introduction/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>oysh</title>
+        <title>oysh spring - Auth - oysh</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#oysh" class="md-skip">
+        <a href="#oysh-spring-auth" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="oysh" class="md-header__button md-logo" aria-label="oysh" data-md-component="logo">
+    <a href="../.." title="oysh" class="md-header__button md-logo" aria-label="oysh" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              oysh spring - Auth
             
           </span>
         </div>
@@ -218,7 +216,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="oysh" class="md-nav__button md-logo" aria-label="oysh" data-md-component="logo">
+    <a href="../.." title="oysh" class="md-nav__button md-logo" aria-label="oysh" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -233,37 +231,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -279,65 +250,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contents
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Contents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Spring Boot
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -398,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core/introduction/" class="md-nav__link">
+      <a href="../../core/introduction/" class="md-nav__link">
         
   
   
@@ -426,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core/usage/" class="md-nav__link">
+      <a href="../../core/usage/" class="md-nav__link">
         
   
   
@@ -454,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core/auth/" class="md-nav__link">
+      <a href="../../core/auth/" class="md-nav__link">
         
   
   
@@ -482,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core/command-framework/" class="md-nav__link">
+      <a href="../../core/command-framework/" class="md-nav__link">
         
   
   
@@ -537,41 +449,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
+  <a href="#authentication" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Contents
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Contents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core
+        Authentication
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#per-session-user-identity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Spring Boot
+        Per-session user identity
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
   
 </li>
       
@@ -592,27 +498,75 @@
 
 
 
-<h1 id="oysh">oysh</h1>
-<p>oyster? shell? ssh? idk... oysh</p>
-<p>A small library intended to expose an interactive shell over SSH from inside a Java application
-and connecting with a standard SSH client.</p>
+<h1 id="oysh-spring-auth">oysh spring - Auth</h1>
 <hr />
-<h2 id="contents">Contents</h2>
-<h4 id="core">Core</h4>
-<ul>
-<li><a href="core/introduction/">Introduction</a></li>
-<li><a href="core/usage/">Usage</a></li>
-<li><a href="core/auth/">Auth</a></li>
-<li><a href="core/command-framework/">Command Frameworks</a></li>
-</ul>
-<h4 id="spring-boot">Spring Boot</h4>
-<ul>
-<li><a href="spring/introduction/">Introduction</a></li>
-<li><a href="spring/usage/">Usage</a></li>
-<li><a href="spring/auth/">Auth</a></li>
-<li><a href="spring/commands/">Commands</a></li>
-<li><a href="spring/events/">Events</a></li>
-</ul>
+<h2 id="authentication">Authentication</h2>
+<p>The starter requires <strong>at least one</strong> authenticator. Define a <code>PasswordAuthenticator</code>
+and/or <code>PublickeyAuthenticator</code> bean in your context — they'll be picked up and passed
+to <code>SshShellServer</code> automatically.</p>
+<pre><code class="language-java">// Password authentication
+@Bean
+PasswordAuthenticator passwordAuthenticator() {
+    return (user, pass, session) -&gt; myUserStore.check(user, pass);
+}
+
+// Public-key authentication against an authorized_keys file
+@Bean
+PublickeyAuthenticator publickeyAuthenticator() {
+    return new AuthorizedKeysAuthenticator(Path.of(&quot;authorized_keys&quot;));
+}
+</code></pre>
+<p>If you define neither, the auto-configuration registers a <strong>default
+<code>PublickeyAuthenticator</code></strong> backed by the file at <code>oysh.auth.authorized-keys-path</code>
+(default: <code>authorized_keys</code>).</p>
+<p>Both beans use <code>@ConditionalOnMissingBean</code>, so any authenticator you define replaces the
+default, not augments it.</p>
+<hr />
+<h2 id="per-session-user-identity">Per-session user identity</h2>
+<p>Once authenticated, <code>SshSession.getPrincipal()</code> returns the user name. This is fed to your
+<code>RoleResolver</code> to determine roles. Declare a <code>RoleResolver</code> bean to override the default
+(which returns an empty set for everyone):</p>
+<pre><code class="language-java">@Bean
+RoleResolver roleResolver() {
+    return principal -&gt; {
+        return &quot;admin&quot;.equals(principal)
+            ? Set.of(&quot;ADMIN&quot;, &quot;READ&quot;)
+            : Set.of(&quot;READ&quot;);
+    };
+}
+</code></pre>
+<hr />
+<h2 id="authorization">Authorization</h2>
+<p>Roles don't enforce anything on their own. The starter uses them in two places:</p>
+<ol>
+<li>
+<p><strong>Command visibility</strong> — <code>@SshCommand(roles = "ADMIN")</code> hides the command from
+   sessions that lack the role. The command won't appear in help output and can't be
+   invoked by unprivileged users.</p>
+</li>
+<li>
+<p><strong>Inline checks</strong> — call <code>SshSession.current().hasAnyRole("ADMIN")</code> inside a command's
+   run logic for finer-grained decisions:</p>
+</li>
+</ol>
+<pre><code class="language-java">@SshCommand
+@Command(name = &quot;config&quot;, description = &quot;View or set configuration.&quot;)
+public class ConfigCommand implements Runnable {
+
+    @Option(names = &quot;--set&quot;, description = &quot;Value to set.&quot;)
+    private String newValue;
+
+    @Override
+    public void run() {
+        SshSession session = SshSession.current();
+        if (newValue != null &amp;&amp; !session.hasAnyRole(&quot;ADMIN&quot;)) {
+            session.writeLine(&quot;permission denied (requires ADMIN)&quot;);
+            return;
+        }
+        // ...
+    }
+}
+</code></pre>
 
 
 
@@ -637,28 +591,6 @@ and connecting with a standard SSH client.</p>
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="core/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Introduction
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -686,10 +618,10 @@ and connecting with a standard SSH client.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.footer", "navigation.instant", "navigation.tracking"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.footer", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
