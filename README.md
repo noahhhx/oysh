@@ -14,7 +14,7 @@ application.
 
 ### oysh-spring-boot-starter
 
-TODO
+Easy setup and configuration for plugging oysh into a new or existing SpringBoot project.
 
 ### oysh-example
 
@@ -23,8 +23,8 @@ Runnable examples to demonstrate how to use this project.
 - [**oysh-standalone-example**](./oysh-example/oysh-standalone-example/README.md) - A minimal 
 example that leverages just the core module with no reliance on the Springboot Starter 
 for exposing a tiny shell over ssh.
-- [**oysh-spring-boot-example**]() - TODO
-
+- [**oysh-spring-boot-example**](./oysh-example/oysh-spring-boot-example/README.md) - A minimal
+example that uses the Springboot starter to configure and run oysh.
 
 ---
 
@@ -57,8 +57,6 @@ Then open `http://localhost:8082/oysh` in your browser.
 
 ## TODOs
 
-- [] Springboot test cases
-- [] Springboot docs
 - [] Non interactive exec channel support
 - [] Public key auth
 - [] Integrate spring security

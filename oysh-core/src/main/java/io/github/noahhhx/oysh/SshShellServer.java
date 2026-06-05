@@ -29,7 +29,6 @@ public class SshShellServer {
     
     private SshServer server;
 
-
     public SshShellServer(SshShellConfig config, SshShellFactory shellFactory,
           @Nullable PublickeyAuthenticator publickeyAuthenticator,
           @Nullable PasswordAuthenticator passwordAuthenticator) {

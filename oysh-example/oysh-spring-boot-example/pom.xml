@@ -32,11 +32,22 @@
   </dependencies>
   
   <build>
+    <finalName>oysh-spring-boot-example</finalName>
     <plugins>
       <plugin>
-        <groupId>org.springframework</groupId>
+        <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>3.5.14</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>io.github.noahhhx.oysh.boot.OyshApplication</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>

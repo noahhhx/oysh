@@ -14,3 +14,10 @@ and connecting with a standard SSH client.
 - [Usage](./core/usage.md)
 - [Auth](./core/auth.md)
 - [Command Frameworks](./core/command-framework.md)
+
+#### Spring Boot
+- [Introduction](./spring/introduction.md)
+- [Usage](./spring/usage.md)
+- [Auth](./spring/auth.md)
+- [Commands](./spring/commands.md)
+- [Events](./spring/events.md)
