@@ -1,4 +1,4 @@
-.PHONY: build-all build-dev run-standalone-example docs
+.PHONY: build-all build-dev run-standalone-example run-spring-example docs
 
 build-all: ## Build whole project
 	./mvnw clean install
@@ -8,6 +8,9 @@ build-dev: ## Build all skipping tests
 
 run-standalone-example: ## Run standalone example program
 	java -jar oysh-example/oysh-standalone-example/target/oysh-standalone-example.jar
+
+run-spring-example: ## Run Springboot example program
+	./mvnw spring-boot:run -pl oysh-example/oysh-spring-boot-example
 	
 docs: ## Serve documentation locally (usage: make docs PORT=8082)
 	mkdocs serve -a localhost:$(or $(PORT), 8082)
