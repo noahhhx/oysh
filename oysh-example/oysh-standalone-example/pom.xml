@@ -7,7 +7,7 @@
   <parent>
     <groupId>io.github.noahhhx</groupId>
     <artifactId>oysh-example</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
 
   <artifactId>oysh-standalone-example</artifactId>
