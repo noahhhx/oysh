@@ -26,5 +26,6 @@
 
   <modules>
     <module>oysh-standalone-example</module>
+    <module>oysh-spring-boot-example</module>
   </modules>
 </project>

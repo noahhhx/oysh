@@ -36,7 +36,6 @@
     <module>oysh-core</module>
     <module>oysh-example</module>
     <module>oysh-spring-boot-starter</module>
-    <module>oysh-example/oysh-spring-boot-example</module>
   </modules>
 
   <scm>
@@ -51,9 +50,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     
     <!-- Dependency Versions -->
-    <sshd.version>2.14.0</sshd.version>
+    <sshd.version>2.18.0</sshd.version>
     <jline.version>3.27.1</jline.version>
-    <picocli.version>4.7.2</picocli.version>
+    <picocli.version>4.7.7</picocli.version>
   </properties>
 
   <dependencyManagement>
