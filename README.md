@@ -60,3 +60,4 @@ Then open `http://localhost:8082/oysh` in your browser.
 - [] Non interactive exec channel support
 - [] Public key auth
 - [] Integrate spring security
+- [] Integrate with [afon](https://github.com/noahhhx/afon)
